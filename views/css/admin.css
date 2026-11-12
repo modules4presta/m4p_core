@@ -1,0 +1,46 @@
+/*
+ * m4p_core
+ *
+ * @author    Modules4Presta <contact@modules4presta.io>
+ * @copyright 2026 Nice Code sp. z o.o. (Modules4Presta)
+ * @license   https://opensource.org/licenses/MIT MIT License
+ */
+
+.m4p-core-links { display: flex; gap: 8px; margin: 12px 0 18px; }
+
+.m4p-core-state { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+.m4p-core-state__label { display: block; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #7a8b99; }
+
+.m4p-core-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+
+.m4p-core-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+  color: #363a41;
+  background: #fff;
+}
+
+.m4p-core-card:hover { border-color: #25b9d7; color: #363a41; text-decoration: none; }
+.m4p-core-card__head { display: flex; align-items: center; gap: 8px; font-size: 15px; }
+.m4p-core-card__desc { font-size: 13px; color: #6c7a89; }
+.m4p-core-card__meta { font-size: 12px; color: #7a8b99; }
+
+.m4p-core-settings { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 16px; align-items: start; }
+.m4p-core-settings__nav ul { margin: 0; padding: 0; list-style: none; }
+.m4p-core-settings__nav li { border-bottom: 1px solid #f0f2f4; }
+.m4p-core-settings__nav li:last-child { border-bottom: 0; }
+.m4p-core-settings__nav a { display: block; padding: 10px 14px; color: #363a41; }
+.m4p-core-settings__nav li.is-current a { font-weight: 600; box-shadow: inset 3px 0 0 #25b9d7; }
+.m4p-core-check { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; }
+.m4p-core-settings__form .help-block code { font-size: 11px; }
+
+@media (max-width: 900px) {
+  .m4p-core-settings { grid-template-columns: minmax(0, 1fr); }
+}
+
+.m4p-core-color { display: flex; gap: 8px; align-items: center; max-width: 360px; }
+.m4p-core-color__picker { flex: none; width: 40px; height: 32px; padding: 0; border: 1px solid #bbcdd2; border-radius: 3px; background: none; cursor: pointer; }

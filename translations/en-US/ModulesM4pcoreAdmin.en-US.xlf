@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="module" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="3f5e4dce4a7a44065f1fd561ece8695d">
+        <source>M4P Core</source>
+        <target>M4P Core</target>
+      </trans-unit>
+      <trans-unit id="eb58edd9056da0ecebaddec5443bd1fc">
+        <source>One place for the settings the Modules4Presta modules share: company data, measurement, addresses and the look of the theme. Every module works without it and uses its own values when it is not installed.</source>
+        <target>One place for the settings the Modules4Presta modules share: company data, measurement, addresses and the look of the theme. Every module works without it and uses its own values when it is not installed.</target>
+      </trans-unit>
+      <trans-unit id="3b878279a04dc47d60932cb294d96259">
+        <source>Overview</source>
+        <target>Overview</target>
+      </trans-unit>
+      <trans-unit id="9b0740109894040926fc4db3c53e10c7">
+        <source>Shared settings</source>
+        <target>Shared settings</target>
+      </trans-unit>
+      <trans-unit id="04749faa5ad41c480bdfbbe3cadc8f65">
+        <source>The pages are in place.</source>
+        <target>The pages are in place.</target>
+      </trans-unit>
+      <trans-unit id="d4974d9059416f6c377a696bd7842b29">
+        <source>The pages could not be added.</source>
+        <target>The pages could not be added.</target>
+      </trans-unit>
+      <trans-unit id="ec77ebf750dfad055de22eb678f61226">
+        <source>The module is disabled, so nothing reads these values right now.</source>
+        <target>The module is disabled, so nothing reads these values right now.</target>
+      </trans-unit>
+      <trans-unit id="351e8b860b0903fc7265c357aedf8ed3">
+        <source>Pick a single shop in the multistore selector – these settings belong to one shop.</source>
+        <target>Pick a single shop in the multistore selector – these settings belong to one shop.</target>
+      </trans-unit>
+      <trans-unit id="5601c0a812c019a5684ecc675f35f6e5">
+        <source>This account may not change these settings.</source>
+        <target>This account may not change these settings.</target>
+      </trans-unit>
+      <trans-unit id="b41b74b7389043218c50b764a98dcbb4">
+        <source>Unknown section.</source>
+        <target>Unknown section.</target>
+      </trans-unit>
+      <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5">
+        <source>Settings saved.</source>
+        <target>Settings saved.</target>
+      </trans-unit>
+      <trans-unit id="8077d7366d481288a54380a634a103d0">
+        <source>Saved, except these fields, which were left as they were: %s.</source>
+        <target>Saved, except these fields, which were left as they were: %s.</target>
+      </trans-unit>
+      <trans-unit id="da37137556143585a6c59e641da53d8a">
+        <source>These fields were stored without their tags or shortened to the length the field holds: %s.</source>
+        <target>These fields were stored without their tags or shortened to the length the field holds: %s.</target>
+      </trans-unit>
+      <trans-unit id="d6d7fbce8382a7abd7be3eb6cb8cf195">
+        <source>No section of settings is available.</source>
+        <target>No section of settings is available.</target>
+      </trans-unit>
+      <trans-unit id="99ae2ab6d07634ec9cea25eec8d35171">
+        <source>The settings live in their own pages, so one page does not hold everything.</source>
+        <target>The settings live in their own pages, so one page does not hold everything.</target>
+      </trans-unit>
+      <trans-unit id="5e63d6cb538ccfd3fac589ecdfd6d8a1">
+        <source>The pages are missing from the menu. This happens when a database from before the module was installed is restored.</source>
+        <target>The pages are missing from the menu. This happens when a database from before the module was installed is restored.</target>
+      </trans-unit>
+      <trans-unit id="d2c24d59e0baff4d0155fbdf62590867">
+        <source>Section</source>
+        <target>Section</target>
+      </trans-unit>
+      <trans-unit id="87d4a897a5693878c3ba87dde374c914">
+        <source>Added by</source>
+        <target>Added by</target>
+      </trans-unit>
+      <trans-unit id="a4ca5edd20d0b5d502ebece575681f58">
+        <source>Fields</source>
+        <target>Fields</target>
+      </trans-unit>
+      <trans-unit id="8bf85e76d4bfe359425657dbd56523a2">
+        <source>Add the missing pages</source>
+        <target>Add the missing pages</target>
+      </trans-unit>
+      <trans-unit id="1ec30118a8eef9e28b3e1b20110ac68f">
+        <source>Shop being edited</source>
+        <target>Shop being edited</target>
+      </trans-unit>
+      <trans-unit id="ac66dc1114bab07ab47d0e35a25bed11">
+        <source>Values filled in for this shop</source>
+        <target>Values filled in for this shop</target>
+      </trans-unit>
+      <trans-unit id="95ef6c230c98c1f2d6c4f31778a39632">
+        <source>Settings version</source>
+        <target>Settings version</target>
+      </trans-unit>
+      <trans-unit id="cd26d9e10ce691cc69aa2b90dcebbdac">
+        <source>expected</source>
+        <target>expected</target>
+      </trans-unit>
+      <trans-unit id="5a4e7e1ccc68447c248e3875a890b7d2">
+        <source>Hook for other modules</source>
+        <target>Hook for other modules</target>
+      </trans-unit>
+      <trans-unit id="b2fdab230a2c39f3595a947861863cb7">
+        <source>ready</source>
+        <target>ready</target>
+      </trans-unit>
+      <trans-unit id="ea21841da70e6405af19fabc4ff8bdd9">
+        <source>missing</source>
+        <target>missing</target>
+      </trans-unit>
+      <trans-unit id="855c3eca6c7aaef477b4f03e4699944d">
+        <source>Sections</source>
+        <target>Sections</target>
+      </trans-unit>
+      <trans-unit id="9aa76d8a9f8e25e87dbcafc7aaf556fc">
+        <source>filled</source>
+        <target>filled</target>
+      </trans-unit>
+      <trans-unit id="054a89a5ab79f11b0ff7f9ee789d5eeb">
+        <source>Modules of the family</source>
+        <target>Modules of the family</target>
+      </trans-unit>
+      <trans-unit id="e55f75a29310d7b60f7ac1d390c8ae42">
+        <source>Module</source>
+        <target>Module</target>
+      </trans-unit>
+      <trans-unit id="34b6cd75171affba6957e308dcbd92be">
+        <source>Version</source>
+        <target>Version</target>
+      </trans-unit>
+      <trans-unit id="46a2a41cc6e552044816a2d04634545d">
+        <source>State</source>
+        <target>State</target>
+      </trans-unit>
+      <trans-unit id="4edda25929cfb45965e2f44130ac368c">
+        <source>Adds a section</source>
+        <target>Adds a section</target>
+      </trans-unit>
+      <trans-unit id="a10311459433adf322f2590a4987c423">
+        <source>enabled</source>
+        <target>enabled</target>
+      </trans-unit>
+      <trans-unit id="075ae3d2fc31640504f814f60e5ef713">
+        <source>disabled</source>
+        <target>disabled</target>
+      </trans-unit>
+      <trans-unit id="a6105c0a611b41b08f1209506350279e">
+        <source>yes</source>
+        <target>yes</target>
+      </trans-unit>
+      <trans-unit id="7fa3b767c460b54a2be4d49030b349c7">
+        <source>no</source>
+        <target>no</target>
+      </trans-unit>
+      <trans-unit id="f1206f9fadc5ce41694f69129aecac26">
+        <source>Configure</source>
+        <target>Configure</target>
+      </trans-unit>
+      <trans-unit id="6af4dd89b46eb4b668271ed31841aa29">
+        <source>no settings page</source>
+        <target>no settings page</target>
+      </trans-unit>
+      <trans-unit id="641557eb2e6c6adc1a6a63a518f5c767">
+        <source>No other module of the family is installed on this shop.</source>
+        <target>No other module of the family is installed on this shop.</target>
+      </trans-unit>
+      <trans-unit id="521c36a31c2762741cf0f8890cbe05e3">
+        <source>On</source>
+        <target>On</target>
+      </trans-unit>
+      <trans-unit id="d518018ca0dafcb5266fcb71bef255e2">
+        <source>Current file:</source>
+        <target>Current file:</target>
+      </trans-unit>
+      <trans-unit id="80e4f27402bda64a24b68e658a0ebfa7">
+        <source>This value does not fit the field, so the previous one was kept.</source>
+        <target>This value does not fit the field, so the previous one was kept.</target>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Save</target>
+      </trans-unit>
+      <trans-unit id="65f4904004783059b7e762429acc18b8">
+        <source>This account may read these settings but not change them.</source>
+        <target>This account may read these settings but not change them.</target>
+      </trans-unit>
+      <trans-unit id="3c29157323ad7347aa2597a6e9f56c2e">
+        <source>Page layout</source>
+        <target>Page layout</target>
+      </trans-unit>
+      <trans-unit id="88cbbf9fa553c2b284994498c6e1dd08">
+        <source>The document layout shows a table of contents built from the H2 headings next to the content. The theme has to support it.</source>
+        <target>The document layout shows a table of contents built from the H2 headings next to the content. The theme has to support it.</target>
+      </trans-unit>
+      <trans-unit id="757ff1ffcd9ee98d1cd64e8f99b96fb9">
+        <source>Automatic: document when the page has at least two H2 headings</source>
+        <target>Automatic: document when the page has at least two H2 headings</target>
+      </trans-unit>
+      <trans-unit id="890d5b38b0a392b6889c221422c13887">
+        <source>Document with a table of contents</source>
+        <target>Document with a table of contents</target>
+      </trans-unit>
+      <trans-unit id="fde7f4165af52fdbfd44ad6df1700625">
+        <source>Regular page</source>
+        <target>Regular page</target>
+      </trans-unit>
+      <trans-unit id="60daa6e5d5cf70fa4b01349f1d3209e9">
+        <source>Company data</source>
+        <target>Company data</target>
+      </trans-unit>
+      <trans-unit id="91eec9cf923219cffd9ce5a2f794250b">
+        <source>Shown by the modules that print contact details, and used in structured data.</source>
+        <target>Shown by the modules that print contact details, and used in structured data.</target>
+      </trans-unit>
+      <trans-unit id="0be82c07536598950a624f3067c0e648">
+        <source>Legal name</source>
+        <target>Legal name</target>
+      </trans-unit>
+      <trans-unit id="dd7bf230fde8d4836917806aff6a6b27">
+        <source>Address</source>
+        <target>Address</target>
+      </trans-unit>
+      <trans-unit id="4e04a590ebee4f45e699ed0a71701967">
+        <source>Tax number</source>
+        <target>Tax number</target>
+      </trans-unit>
+      <trans-unit id="bcc254b55c4a1babdf1dcb82c207506b">
+        <source>Phone</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="1e884e3078d9978e216a027ecd57fb34">
+        <source>E-mail</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="80a0c205cd57b22fca7f174253870300">
+        <source>Opening hours</source>
+        <target>Opening hours</target>
+      </trans-unit>
+      <trans-unit id="3c71eb723e1b09e4abc6941c1fa0338d">
+        <source>For example 7:30–16:00</source>
+        <target>For example 7:30–16:00</target>
+      </trans-unit>
+      <trans-unit id="911842b19d8b2f9bbed8cfe909d52975">
+        <source>Measurement</source>
+        <target>Measurement</target>
+      </trans-unit>
+      <trans-unit id="4be3a64e210bfbe8656950ebcbd92efa">
+        <source>Identifiers and switches the modules use when they report what visitors do.</source>
+        <target>Identifiers and switches the modules use when they report what visitors do.</target>
+      </trans-unit>
+      <trans-unit id="446f6dbbe8ca22aba59fece00526ffb8">
+        <source>Google Tag Manager container</source>
+        <target>Google Tag Manager container</target>
+      </trans-unit>
+      <trans-unit id="9c6b1ff1254200bde8f26163648c5c77">
+        <source>Report events</source>
+        <target>Report events</target>
+      </trans-unit>
+      <trans-unit id="103b5d8a2e590b95f88f507411fa9d93">
+        <source>utm_source for outbound links</source>
+        <target>utm_source for outbound links</target>
+      </trans-unit>
+      <trans-unit id="284b47b0bb63ae2df3b29f0e691d6fcf">
+        <source>Addresses</source>
+        <target>Addresses</target>
+      </trans-unit>
+      <trans-unit id="ce3817db5aecadf145a6fe3d48418a06">
+        <source>Where the modules send a visitor who wants to know more.</source>
+        <target>Where the modules send a visitor who wants to know more.</target>
+      </trans-unit>
+      <trans-unit id="49d468c681b94748463ab86ac7326679">
+        <source>Module shop</source>
+        <target>Module shop</target>
+      </trans-unit>
+      <trans-unit id="b9bfbe11ded79fa1b72b327d0497f9dd">
+        <source>Support page</source>
+        <target>Support page</target>
+      </trans-unit>
+      <trans-unit id="715cda50ac7729356c1f5238e2ef755d">
+        <source>Values of the active theme. An empty field keeps the theme value shown in grey.</source>
+        <target>Values of the active theme. An empty field keeps the theme value shown in grey.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

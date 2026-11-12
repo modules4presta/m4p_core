@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+  <name>m4p_core</name>
+  <displayName><![CDATA[M4P Core]]></displayName>
+  <version><![CDATA[1.4.0]]></version>
+  <description><![CDATA[Jedno miejsce na ustawienia wspólne modułów Modules4Presta: dane firmy, pomiar, adresy i wygląd motywu. Każdy moduł działa bez niego i korzysta wtedy z własnych wartości.]]></description>
+  <author><![CDATA[Modules4Presta]]></author>
+  <tab><![CDATA[administration]]></tab>
+  <is_configurable>1</is_configurable>
+  <need_instance>0</need_instance>
+  <limited_countries></limited_countries>
+</module>

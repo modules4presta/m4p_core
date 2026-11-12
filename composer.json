@@ -1,0 +1,17 @@
+{
+    "name": "modules4presta/m4p_core",
+    "description": "Holds the settings a family of PrestaShop modules shares: company data, measurement, addresses and theme tokens.",
+    "type": "prestashop-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nice Code sp. z o.o. (Modules4Presta)",
+            "email": "contact@modules4presta.io",
+            "homepage": "https://nice-code.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "homepage": "https://nice-code.com/pl/oferta/moduly-prestashop"
+}
