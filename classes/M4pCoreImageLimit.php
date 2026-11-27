@@ -23,7 +23,7 @@ class M4pCoreImageLimit
     public const MAX_KB = 'IMAGE_MAX_KB';
     public const MAX_PX = 'IMAGE_MAX_PX';
 
-    public const DEFAULT_MAX_KB = 200;
+    public const DEFAULT_MAX_KB = 0;
     public const DEFAULT_MAX_PX = 1440;
 
     private const ORIGINAL_QUALITY = 85;

@@ -4,6 +4,13 @@ All notable changes to this module are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the module uses
 [semantic versioning](https://semver.org/).
 
+## [1.26.0] - 2026-11-27
+
+### Changed
+
+- Product images: the size limit is off on a new install (largest file 0 KB) and is switched on by entering a size,
+  for example 200 KB. A shop that already applies the limit keeps it after the upgrade.
+
 ## [1.25.0] - 2026-11-27
 
 ### Added
