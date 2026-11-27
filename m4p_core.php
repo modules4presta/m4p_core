@@ -13,10 +13,33 @@ if (!defined('_PS_VERSION_')) {
 }
 
 require_once __DIR__ . '/classes/M4pCoreSettings.php';
+require_once __DIR__ . '/classes/M4pCoreCategoryImage.php';
 require_once __DIR__ . '/classes/M4pCoreSections.php';
 require_once __DIR__ . '/classes/M4pCoreTheme.php';
 require_once __DIR__ . '/classes/M4pCoreCmsDates.php';
 require_once __DIR__ . '/classes/M4pCoreCmsLayout.php';
+require_once __DIR__ . '/classes/M4pCoreLogoMark.php';
+require_once __DIR__ . '/classes/M4pCoreSales.php';
+require_once __DIR__ . '/classes/M4pCoreImageLimit.php';
+require_once __DIR__ . '/classes/M4pCoreProductView.php';
+require_once __DIR__ . '/classes/M4pCoreCartView.php';
+require_once __DIR__ . '/classes/M4pCoreMotion.php';
+require_once __DIR__ . '/classes/M4pCoreShopMode.php';
+require_once __DIR__ . '/classes/M4pCoreFrontVariables.php';
+require_once __DIR__ . '/classes/M4pCoreAccountView.php';
+require_once __DIR__ . '/classes/M4pCoreOrderHistory.php';
+require_once __DIR__ . '/classes/M4pCoreCmsTables.php';
+require_once __DIR__ . '/classes/M4pCoreCmsToc.php';
+require_once __DIR__ . '/classes/M4pCoreCategoryView.php';
+require_once __DIR__ . '/classes/M4pCoreBestsellers.php';
+require_once __DIR__ . '/classes/M4pCoreUnits.php';
+require_once __DIR__ . '/classes/M4pCoreOrderView.php';
+require_once __DIR__ . '/classes/M4pCoreWishlistView.php';
+require_once __DIR__ . '/classes/M4pCoreDiscountView.php';
+require_once __DIR__ . '/classes/M4pCoreSlipView.php';
+require_once __DIR__ . '/classes/M4pCoreMethodIcons.php';
+require_once __DIR__ . '/classes/M4pCoreCheckoutCountry.php';
+require_once __DIR__ . '/classes/M4pCoreCheckoutAddress.php';
 
 class M4p_Core extends Module
 {
@@ -27,7 +50,10 @@ class M4p_Core extends Module
     /** The hook other modules use to add their own section of settings. */
     public const HOOK_SECTIONS = 'actionM4pCoreSections';
 
-    public const FRONT_HOOKS = ['displayHeader', 'filterCmsContent', 'actionObjectCmsAddAfter', 'actionObjectCmsUpdateAfter'];
+    /** Runs after the core writes a product image and its thumbnails: upload, import, thumbnail regeneration. */
+    public const IMAGE_HOOKS = ['actionWatermark'];
+
+    public const FRONT_HOOKS = ['displayHeader', 'filterCmsContent', 'actionObjectCmsAddAfter', 'actionObjectCmsUpdateAfter', 'actionFrontControllerSetVariables', 'displayM4pPrice', 'actionFrontControllerDetectContextCountryAfter'];
 
     public const CMS_FORM_HOOKS = [
         'actionCmsPageFormBuilderModifier',
@@ -40,7 +66,7 @@ class M4p_Core extends Module
     {
         $this->name = 'm4p_core';
         $this->tab = 'administration';
-        $this->version = '1.4.0';
+        $this->version = '1.25.0';
         $this->author = 'Modules4Presta';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '1.7.6.0', 'max' => _PS_VERSION_];
@@ -58,7 +84,8 @@ class M4p_Core extends Module
 
     public function install(): bool
     {
-        if (!parent::install() || !$this->installHook() || !$this->installTabs() || !$this->installFront()) {
+        if (!parent::install() || !$this->installHook() || !$this->installTabs() || !$this->installFront()
+            || !$this->registerHook(self::IMAGE_HOOKS)) {
             return false;
         }
 
@@ -99,9 +126,146 @@ class M4p_Core extends Module
             && M4pCoreCmsLayout::install();
     }
 
+    /**
+     * Template variables of the M4P theme ($m4p_shop, $m4p_header, $priceDisplay, $m4p_order_tones, $cms_toc on CMS
+     * pages); the hook runs for every front page and for the AJAX refresh of the mini cart.
+     *
+     * @param array<string, mixed> $params
+     */
+    public function hookActionFrontControllerSetVariables(array $params): void
+    {
+        M4pCoreUnits::registerModifier($this->context->smarty);
+        $controller = $this->context->controller;
+        (new M4pCoreFrontVariables($this->context))->assign($controller instanceof FrontController ? (string) $controller->php_self : null);
+        if ($controller instanceof CmsController) {
+            M4pCoreCmsToc::assign($this->context);
+        }
+        if ($controller instanceof ProductListingFrontController) {
+            $perPage = (int) Tools::getValue('resultsPerPage');
+            $this->context->smarty->assign('m4p_listing', [
+                'per_page' => $perPage > 0 ? $perPage : (int) Configuration::get('PS_PRODUCTS_PER_PAGE'),
+                'per_page_options' => [8, 12, 24, 48],
+            ]);
+        }
+        if ($controller instanceof FrontController && in_array($controller->php_self, ['search', 'pagenotfound'], true)) {
+            $this->context->smarty->assign('m4p_bestsellers', M4pCoreBestsellers::presented($this->context, 4));
+        }
+        if ($controller instanceof ProductController) {
+            $this->context->smarty->assign('m4p_product', M4pCoreProductView::of($this->context, (int) Tools::getValue('id_product')));
+        }
+        // the one-page checkout re-renders its payment options after a carrier change (ps_onepagecheckout SetCarrier)
+        $isCheckoutModule = $controller instanceof ModuleFrontController && $controller->module instanceof Module && $controller->module->name === 'ps_onepagecheckout';
+        if ($controller instanceof CartController || $controller instanceof OrderController || $isCheckoutModule) {
+            $this->context->smarty->assign('m4p_cart', M4pCoreCartView::of($this->context));
+        }
+        if ($controller instanceof OrderConfirmationController) {
+            $this->context->smarty->assign('m4p_order', M4pCoreOrderView::of($this->context, (int) Tools::getValue('id_cart')));
+        }
+        if ($controller instanceof OrderConfirmationController || $controller instanceof OrderController || $isCheckoutModule) {
+            $this->context->smarty->assign('m4p_methods', M4pCoreMethodIcons::forFront($this->context));
+        }
+        if ($controller instanceof MyAccountController) {
+            $this->context->smarty->assign('m4p_account', M4pCoreAccountView::of($this->context));
+        }
+        if ($controller instanceof OrderDetailController) {
+            $order = new Order((int) Tools::getValue('id_order'));
+            if (Validate::isLoadedObject($order) && (int) $order->id_customer === (int) $this->context->customer->id) {
+                $this->assignOrderDetail($order);
+            }
+        }
+        if ($controller instanceof GuestTrackingController && Tools::getValue('order_reference') && Tools::getValue('email')) {
+            // The same check as the core's guest tracking: order number and the customer's e-mail.
+            $order = Order::getByReferenceAndEmail(current(explode('#', (string) Tools::getValue('order_reference'))), (string) Tools::getValue('email'));
+            if (Validate::isLoadedObject($order)) {
+                $this->assignOrderDetail($order);
+            }
+        }
+        if ($controller instanceof HistoryController) {
+            $this->context->smarty->assign('m4p_history', M4pCoreOrderHistory::of(
+                $this->context,
+                (string) Tools::getValue('status'),
+                (string) Tools::getValue('q'),
+                (int) Tools::getValue('page', 1)
+            ));
+        }
+        if ($controller instanceof ModuleFrontController && get_class($controller) === 'BlockWishlistListsModuleFrontController') {
+            $this->context->smarty->assign('m4p_wishlists', M4pCoreWishlistView::of($this->context));
+        }
+        if ($controller instanceof DiscountController) {
+            $this->context->smarty->assign('m4p_discounts', M4pCoreDiscountView::of($this->context));
+        }
+        if ($controller instanceof OrderSlipController) {
+            $this->context->smarty->assign('m4p_slips', M4pCoreSlipView::of($this->context));
+        }
+        if ($controller instanceof CategoryController) {
+            $this->context->smarty->assign('m4p_category', M4pCoreCategoryView::of($this->context, (int) Tools::getValue('id_category')));
+        }
+    }
+
+    /**
+     * The account's order page: the order view of the confirmation ($m4p_order) and, while a bank transfer is still to
+     * be paid, the bank details of ps_wirepayment ($m4p_order_transfer); the caller has checked the order is the visitor's.
+     */
+    private function assignOrderDetail(Order $order): void
+    {
+        $this->context->smarty->assign('m4p_order', M4pCoreOrderView::of($this->context, (int) $order->id_cart));
+        $toPay = in_array((int) $order->getCurrentState(), M4pCoreOrderHistory::states(M4pCoreOrderHistory::TO_PAY), true);
+        $wire = (int) Module::getModuleIdByName('ps_wirepayment');
+        $transfer = $toPay && $order->module === 'ps_wirepayment' && $wire
+            ? (string) Hook::exec('displayPaymentReturn', ['order' => $order], $wire)
+            : '';
+        $this->context->smarty->assign('m4p_order_transfer', $transfer);
+    }
+
+    /**
+     * @param array<string, mixed> $params
+     */
+    public function hookActionFrontControllerDetectContextCountryAfter(array $params): void
+    {
+        M4pCoreCheckoutCountry::apply($this->context, $params['controller'] ?? null);
+    }
+
+    /**
+     * Fits the original and the thumbnails of the product image in the size limit (Images section).
+     *
+     * @param array<string, mixed> $params
+     */
+    public function hookActionWatermark(array $params): void
+    {
+        $idImage = (int) ($params['id_image'] ?? 0);
+        $over = M4pCoreImageLimit::apply($idImage);
+        if ($over) {
+            PrestaShopLogger::addLog(
+                'm4p_core: product image files above the size limit at the lowest quality: ' . implode(', ', array_map('basename', $over)),
+                2,
+                null,
+                'Image',
+                $idImage,
+                true
+            );
+        }
+    }
+
+    /**
+     * Second price line of a product or cart line: {hook h='displayM4pPrice' product=$product tax=true}.
+     *
+     * @param array<string, mixed> $params
+     */
+    public function hookDisplayM4pPrice(array $params): string
+    {
+        return (new M4pCoreFrontVariables($this->context))->price($params);
+    }
+
     public function hookDisplayHeader(): string
     {
-        return M4pCoreTheme::head();
+        M4pCoreUnits::registerModifier($this->context->smarty);
+        $tabBlurTitle = (string) M4pCoreSettings::get('TAB_BLUR_TITLE', '');
+        if ($tabBlurTitle !== '') {
+            Media::addJsDef(['m4pTabBlurTitle' => $tabBlurTitle]);
+        }
+        $this->context->smarty->assign('m4p_logo_mark', M4pCoreLogoMark::url());
+
+        return M4pCoreTheme::head() . M4pCoreMotion::head();
     }
 
     /**

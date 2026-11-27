@@ -36,7 +36,7 @@
       {foreach from=$m4p_section.fields item=field}
         {assign var=value value=$m4p_values[$field.key]}
         <div class="form-group{if $field.key|in_array:$m4p_refused} has-error{/if}">
-          {if $field.type == 'switch'}
+          {if $field.type == 'switch' || $field.type == 'days' || $field.type == 'week'}
             <span class="control-label">{$field.label|escape:'html':'UTF-8'}</span>
           {else}
             <label for="f-{$field.key|escape:'html':'UTF-8'}">{$field.label|escape:'html':'UTF-8'}</label>
@@ -48,6 +48,27 @@
                 value="1"{if $value} checked{/if}{if !$m4p_can_edit} disabled{/if}>
               <span>{l s='On' d='Modules.M4pcore.Admin'}</span>
             </label>
+          {elseif $field.type == 'week'}
+            <div class="m4p-core-week">
+              {foreach from=$m4p_day_names key=day item=dayName}
+                <label class="m4p-core-week__day" for="f-{$field.key|escape:'html':'UTF-8'}-{$day|intval}">
+                  <span>{$dayName|escape:'html':'UTF-8'}</span>
+                  <input type="text" class="form-control fixed-width-md" id="f-{$field.key|escape:'html':'UTF-8'}-{$day|intval}"
+                    name="{$field.key|escape:'html':'UTF-8'}[{$day|intval}]" value="{$m4p_week[$field.key][$day]|default:''|escape:'html':'UTF-8'}"
+                    placeholder="{l s='Closed' d='Modules.M4pcore.Admin'}"{if !$m4p_can_edit} readonly{/if}>
+                </label>
+              {/foreach}
+            </div>
+          {elseif $field.type == 'days'}
+            <div>
+              {foreach from=$field.options key=optionValue item=optionLabel}
+                <label class="m4p-core-check" for="f-{$field.key|escape:'html':'UTF-8'}-{$optionValue|escape:'html':'UTF-8'}">
+                  <input type="checkbox" id="f-{$field.key|escape:'html':'UTF-8'}-{$optionValue|escape:'html':'UTF-8'}" name="{$field.key|escape:'html':'UTF-8'}[]"
+                    value="{$optionValue|escape:'html':'UTF-8'}"{if "$optionValue"|in_array:$m4p_ticked[$field.key]} checked{/if}{if !$m4p_can_edit} disabled{/if}>
+                  <span>{$optionLabel|escape:'html':'UTF-8'}</span>
+                </label>
+              {/foreach}
+            </div>
           {elseif $field.type == 'textarea'}
             <textarea class="form-control" id="f-{$field.key|escape:'html':'UTF-8'}"
               name="{$field.key|escape:'html':'UTF-8'}" rows="3"{if !$m4p_can_edit} readonly{/if}>{$value|escape:'html':'UTF-8'}</textarea>

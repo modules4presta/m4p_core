@@ -2,7 +2,7 @@
 <module>
   <name>m4p_core</name>
   <displayName><![CDATA[M4P Core]]></displayName>
-  <version><![CDATA[1.4.0]]></version>
+  <version><![CDATA[1.25.0]]></version>
   <description><![CDATA[One place for the settings the Modules4Presta modules share: company data, measurement, addresses and the look of the theme. Every module works without it and uses its own values when it is not installed.]]></description>
   <author><![CDATA[Modules4Presta]]></author>
   <tab><![CDATA[administration]]></tab>

@@ -52,7 +52,7 @@ class M4pCoreTheme
 
         $fields = array_fill_keys(array_keys(self::GROUPS), []);
         foreach ($tokens as $name => $default) {
-            if (in_array($name, self::FONT_TOKENS, true)) {
+            if (in_array($name, self::FONT_TOKENS, true) || in_array($name, M4pCoreMotion::TOKENS, true)) {
                 continue;
             }
             $fields[self::groupOf($name, $default)][] = [
