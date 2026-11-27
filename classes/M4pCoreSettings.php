@@ -132,6 +132,26 @@ class M4pCoreSettings
                 continue;
             }
 
+            if ($type === 'week') {
+                $week = M4pCoreSales::fromInput(is_array($raw) ? $raw : []);
+                if ($week === null) {
+                    $refused[] = $key;
+                    continue;
+                }
+                self::set($key, $week);
+                continue;
+            }
+
+            if ($type === 'days') {
+                $days = self::days($raw, $field);
+                if ($days === '' && empty($field['optional'])) {
+                    $refused[] = $key;
+                    continue;
+                }
+                self::set($key, $days);
+                continue;
+            }
+
             $value = is_scalar($raw) ? trim((string) $raw) : '';
 
             if ($value === '') {
@@ -184,6 +204,8 @@ class M4pCoreSettings
                 }
 
                 return (string) $number;
+            case 'time':
+                return preg_match('/^([01]?\d|2[0-3]):[0-5]\d$/', $value) ? $value : null;
             case 'color':
                 return M4pCoreTheme::isColor($value) ? strtolower($value) : null;
             case 'css':
@@ -197,6 +219,22 @@ class M4pCoreSettings
             default:
                 return Validate::isCleanHtml($value) ? Tools::substr($value, 0, 255) : null;
         }
+    }
+
+    /**
+     * The ticked options of a `days` field as a comma-separated list, in the order of the options.
+     *
+     * @param mixed $raw
+     * @param array<string, mixed> $field
+     *
+     * @return string empty when nothing valid was ticked
+     */
+    private static function days($raw, array $field): string
+    {
+        $ticked = array_map('strval', is_array($raw) ? $raw : []);
+        $allowed = array_map('strval', array_keys($field['options'] ?? []));
+
+        return implode(',', array_values(array_intersect($allowed, $ticked)));
     }
 
     /**

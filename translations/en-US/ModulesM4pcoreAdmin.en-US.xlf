@@ -58,6 +58,34 @@
         <source>No section of settings is available.</source>
         <target>No section of settings is available.</target>
       </trans-unit>
+      <trans-unit id="6f8522e0610541f1ef215a22ffa66ff6">
+        <source>Monday</source>
+        <target>Monday</target>
+      </trans-unit>
+      <trans-unit id="5792315f09a5d54fb7e3d066672b507f">
+        <source>Tuesday</source>
+        <target>Tuesday</target>
+      </trans-unit>
+      <trans-unit id="796c163589f295373e171842f37265d5">
+        <source>Wednesday</source>
+        <target>Wednesday</target>
+      </trans-unit>
+      <trans-unit id="78ae6f0cd191d25147e252dc54768238">
+        <source>Thursday</source>
+        <target>Thursday</target>
+      </trans-unit>
+      <trans-unit id="c33b138a163847cdb6caeeb7c9a126b4">
+        <source>Friday</source>
+        <target>Friday</target>
+      </trans-unit>
+      <trans-unit id="8b7051187b9191cdcdae6ed5a10e5adc">
+        <source>Saturday</source>
+        <target>Saturday</target>
+      </trans-unit>
+      <trans-unit id="9d1a0949c39e66a0cd65240bc0ac9177">
+        <source>Sunday</source>
+        <target>Sunday</target>
+      </trans-unit>
       <trans-unit id="99ae2ab6d07634ec9cea25eec8d35171">
         <source>The settings live in their own pages, so one page does not hold everything.</source>
         <target>The settings live in their own pages, so one page does not hold everything.</target>
@@ -170,6 +198,10 @@
         <source>On</source>
         <target>On</target>
       </trans-unit>
+      <trans-unit id="03f4a47830f97377a35321051685071e">
+        <source>Closed</source>
+        <target>Closed</target>
+      </trans-unit>
       <trans-unit id="d518018ca0dafcb5266fcb71bef255e2">
         <source>Current file:</source>
         <target>Current file:</target>
@@ -206,6 +238,78 @@
         <source>Regular page</source>
         <target>Regular page</target>
       </trans-unit>
+      <trans-unit id="aea23489ce3aa9b6406ebb28e0cda430">
+        <source>Windows</source>
+        <target>Windows</target>
+      </trans-unit>
+      <trans-unit id="9446a3a930fe57a6e9ff06748633250e">
+        <source>How windows open and close: the cookie window, the list and file import in the cart, the shopping list window.</source>
+        <target>How windows open and close: the cookie window, the list and file import in the cart, the shopping list window.</target>
+      </trans-unit>
+      <trans-unit id="951bf8e74894d3624ce6deb2058f5309">
+        <source>Animate windows</source>
+        <target>Animate windows</target>
+      </trans-unit>
+      <trans-unit id="c99cc8c75a6c73dce645a8b55eabd67f">
+        <source>Off: windows appear and disappear at once. Visitors who turned off animations in their system always see them at once.</source>
+        <target>Off: windows appear and disappear at once. Visitors who turned off animations in their system always see them at once.</target>
+      </trans-unit>
+      <trans-unit id="d6b6b668dbca9d4fe774bb654226ebe3">
+        <source>Animation</source>
+        <target>Animation</target>
+      </trans-unit>
+      <trans-unit id="04e0385c10aefee8e4681617d2f3ef40">
+        <source>Fade</source>
+        <target>Fade</target>
+      </trans-unit>
+      <trans-unit id="85b96d54f29609a4b10cecba86049c70">
+        <source>Fade and grow</source>
+        <target>Fade and grow</target>
+      </trans-unit>
+      <trans-unit id="c2e43be38273b6fe2c77b6f03ca4085f">
+        <source>Slide up</source>
+        <target>Slide up</target>
+      </trans-unit>
+      <trans-unit id="5cd4b03470209dbddb16a3146559f7a1">
+        <source>Opening time in milliseconds</source>
+        <target>Opening time in milliseconds</target>
+      </trans-unit>
+      <trans-unit id="c883b265a2968c76d21293ae30a6cdc7">
+        <source>Closing takes two thirds of this time.</source>
+        <target>Closing takes two thirds of this time.</target>
+      </trans-unit>
+      <trans-unit id="69980c88228500256d3830f5ffec5391">
+        <source>Sales model</source>
+        <target>Sales model</target>
+      </trans-unit>
+      <trans-unit id="07fedb1d5401711d2c5191322ee88644">
+        <source>Who the shop sells to. Companies see net prices after logging in, a company account and the minimum order. Consumers see gross prices without logging in and a personal account.</source>
+        <target>Who the shop sells to. Companies see net prices after logging in, a company account and the minimum order. Consumers see gross prices without logging in and a personal account.</target>
+      </trans-unit>
+      <trans-unit id="b991940a17053f952022543fa9ba3e09">
+        <source>The shop sells to</source>
+        <target>The shop sells to</target>
+      </trans-unit>
+      <trans-unit id="2902bf3aca469e1afcbb0f81bf6db1af">
+        <source>Companies (B2B)</source>
+        <target>Companies (B2B)</target>
+      </trans-unit>
+      <trans-unit id="cf5bfa47f7ec489a3cb126df682af47c">
+        <source>Consumers (B2C)</source>
+        <target>Consumers (B2C)</target>
+      </trans-unit>
+      <trans-unit id="dcfd483f4a250e93f12736393b36a310">
+        <source>Companies and consumers</source>
+        <target>Companies and consumers</target>
+      </trans-unit>
+      <trans-unit id="bf44ca5927b412d8feb8ace1517dd35a">
+        <source>Company customer groups</source>
+        <target>Company customer groups</target>
+      </trans-unit>
+      <trans-unit id="367100eade0a67055f5a8ddd8ea5ac65">
+        <source>With "Companies and consumers": customers in these groups see the company view, everyone else the consumer view.</source>
+        <target>With "Companies and consumers": customers in these groups see the company view, everyone else the consumer view.</target>
+      </trans-unit>
       <trans-unit id="60daa6e5d5cf70fa4b01349f1d3209e9">
         <source>Company data</source>
         <target>Company data</target>
@@ -226,6 +330,26 @@
         <source>Tax number</source>
         <target>Tax number</target>
       </trans-unit>
+      <trans-unit id="4795637b5d7cb1afc70e9a0143826fe6">
+        <source>Court register number (KRS)</source>
+        <target>Court register number (KRS)</target>
+      </trans-unit>
+      <trans-unit id="83379ef1a838350a05e582b9cb0ce0dd">
+        <source>Registry court</source>
+        <target>Registry court</target>
+      </trans-unit>
+      <trans-unit id="b3ea8825fe3785ea3687f3063fd4f989">
+        <source>Share capital</source>
+        <target>Share capital</target>
+      </trans-unit>
+      <trans-unit id="fec485779a27185642c022e987d6fe37">
+        <source>With the currency, for example 50 000 zł</source>
+        <target>With the currency, for example 50 000 zł</target>
+      </trans-unit>
+      <trans-unit id="0ce4430c8a4e013d1e7877fe984ea6fc">
+        <source>Veterinary approval number</source>
+        <target>Veterinary approval number</target>
+      </trans-unit>
       <trans-unit id="bcc254b55c4a1babdf1dcb82c207506b">
         <source>Phone</source>
         <target>Phone</target>
@@ -241,6 +365,82 @@
       <trans-unit id="3c71eb723e1b09e4abc6941c1fa0338d">
         <source>For example 7:30–16:00</source>
         <target>For example 7:30–16:00</target>
+      </trans-unit>
+      <trans-unit id="3b75aac75dc5f26614dab746da7b081d">
+        <source>Privacy policy page</source>
+        <target>Privacy policy page</target>
+      </trans-unit>
+      <trans-unit id="7da40f103f4eadd87f558563d211331a">
+        <source>Linked in the checkout footer and next to the terms consent.</source>
+        <target>Linked in the checkout footer and next to the terms consent.</target>
+      </trans-unit>
+      <trans-unit id="2fc08934da87a5de2e6787faf6cb83ef">
+        <source>Sales department</source>
+        <target>Sales department</target>
+      </trans-unit>
+      <trans-unit id="3c5d8466b735c0727638af5133fee2ea">
+        <source>The phone, hours and e-mail in the strip above the header, in the footer and in the contact widget.</source>
+        <target>The phone, hours and e-mail in the strip above the header, in the footer and in the contact widget.</target>
+      </trans-unit>
+      <trans-unit id="013066f48ca1207a9fc49b386e91239f">
+        <source>Empty: the phone from the shop contact details.</source>
+        <target>Empty: the phone from the shop contact details.</target>
+      </trans-unit>
+      <trans-unit id="6a7e73161603d87b26a8eac49dab0a9c">
+        <source>Hours</source>
+        <target>Hours</target>
+      </trans-unit>
+      <trans-unit id="6f4da70003678daf6a28781321729a1b">
+        <source>For example 7:30-16:00. An empty day is closed.</source>
+        <target>For example 7:30-16:00. An empty day is closed.</target>
+      </trans-unit>
+      <trans-unit id="74cbd2c91d7c77c2d78f2f40bcef873a">
+        <source>Empty: the shop e-mail.</source>
+        <target>Empty: the shop e-mail.</target>
+      </trans-unit>
+      <trans-unit id="ded40f2a77c30efc6062db0cbd857746">
+        <source>Footer</source>
+        <target>Footer</target>
+      </trans-unit>
+      <trans-unit id="fc717b6bf2ca6d1bf363c43e57d73528">
+        <source>The logo, payments and delivery in the footer. The link columns are edited in Link List, the company line in Company data.</source>
+        <target>The logo, payments and delivery in the footer. The link columns are edited in Link List, the company line in Company data.</target>
+      </trans-unit>
+      <trans-unit id="93599109f57d404b0eeb8ed03b5f82c1">
+        <source>Light logo</source>
+        <target>Light logo</target>
+      </trans-unit>
+      <trans-unit id="d18f77bf02e897cdc1e4bc40e14f772c">
+        <source>PNG or WebP with a transparent background, about 360 × 80 px. Without it the footer shows the shop name.</source>
+        <target>PNG or WebP with a transparent background, about 360 × 80 px. Without it the footer shows the shop name.</target>
+      </trans-unit>
+      <trans-unit id="bb8c9951fa855f26c3914b943588aadb">
+        <source>Remove the light logo</source>
+        <target>Remove the light logo</target>
+      </trans-unit>
+      <trans-unit id="0da8d9a75492046bea7f314521e07cae">
+        <source>Payment methods</source>
+        <target>Payment methods</target>
+      </trans-unit>
+      <trans-unit id="97992359ce6ca3667d63cb2000df0a78">
+        <source>One per line. Empty: the group is hidden.</source>
+        <target>One per line. Empty: the group is hidden.</target>
+      </trans-unit>
+      <trans-unit id="065ab3a28ca4f16f55f103adc7d0226f">
+        <source>Delivery</source>
+        <target>Delivery</target>
+      </trans-unit>
+      <trans-unit id="2d74be8aaa66a854a9b88bfa02599579">
+        <source>For example: Own transport</source>
+        <target>For example: Own transport</target>
+      </trans-unit>
+      <trans-unit id="96fd07f8244c1d8b9a38930ea4bdec97">
+        <source>Pickup</source>
+        <target>Pickup</target>
+      </trans-unit>
+      <trans-unit id="ab189a24e04df2849d214c5ada90a183">
+        <source>For example: Personal pickup. Empty: not shown.</source>
+        <target>For example: Personal pickup. Empty: not shown.</target>
       </trans-unit>
       <trans-unit id="911842b19d8b2f9bbed8cfe909d52975">
         <source>Measurement</source>
@@ -277,6 +477,414 @@
       <trans-unit id="b9bfbe11ded79fa1b72b327d0497f9dd">
         <source>Support page</source>
         <target>Support page</target>
+      </trans-unit>
+      <trans-unit id="ffb7e666a70151215b4c55c6268d7d72">
+        <source>Newsletter</source>
+        <target>Newsletter</target>
+      </trans-unit>
+      <trans-unit id="53f2fd0c9faf47807592ef074cfae38f">
+        <source>What the theme shows next to the newsletter sign-up.</source>
+        <target>What the theme shows next to the newsletter sign-up.</target>
+      </trans-unit>
+      <trans-unit id="38d3d9e469773ebea18a49768b142c57">
+        <source>Page with the sending and unsubscribing rules</source>
+        <target>Page with the sending and unsubscribing rules</target>
+      </trans-unit>
+      <trans-unit id="2422e068f17f18d97866047a716bb96f">
+        <source>Linked under the consent as "Sending and unsubscribing".</source>
+        <target>Linked under the consent as "Sending and unsubscribing".</target>
+      </trans-unit>
+      <trans-unit id="b78a3223503896721cca1303f776159b">
+        <source>Title</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="02e9e9a95f439af74e2f2d91263ff4e1">
+        <source>Empty: "News and offers by email".</source>
+        <target>Empty: "News and offers by email".</target>
+      </trans-unit>
+      <trans-unit id="94f68e5548d5142235f1f0f5415b97c8">
+        <source>Text under the title</source>
+        <target>Text under the title</target>
+      </trans-unit>
+      <trans-unit id="6a5f0899c1c753b93d4755647d09b150">
+        <source>What the customer gets and how often. Empty: the standard text.</source>
+        <target>What the customer gets and how often. Empty: the standard text.</target>
+      </trans-unit>
+      <trans-unit id="c03d53b70feba4ea842510abecd6c45e">
+        <source>Photo</source>
+        <target>Photo</target>
+      </trans-unit>
+      <trans-unit id="5f01ba7e4e1c206bd54294efbc817d65">
+        <source>WebP or JPG, about 1280 × 724 px, up to 1 MB. Shown next to the form; without it the form takes the whole width.</source>
+        <target>WebP or JPG, about 1280 × 724 px, up to 1 MB. Shown next to the form; without it the form takes the whole width.</target>
+      </trans-unit>
+      <trans-unit id="c69900f73099ff53b54d757f6eb47748">
+        <source>Remove the photo</source>
+        <target>Remove the photo</target>
+      </trans-unit>
+      <trans-unit id="71266f1973210fbe39d2022c1634cee0">
+        <source>The order cut-off and the delivery days shown in the header bar, the cart and on the home page. An order placed by the cut-off arrives on the next delivery day.</source>
+        <target>The order cut-off and the delivery days shown in the header bar, the cart and on the home page. An order placed by the cut-off arrives on the next delivery day.</target>
+      </trans-unit>
+      <trans-unit id="943401de4d4fe8fda3379fd52c5dabd1">
+        <source>Order cut-off</source>
+        <target>Order cut-off</target>
+      </trans-unit>
+      <trans-unit id="481223b49dc50ba9ae35063648ef3c48">
+        <source>Hours and minutes, for example 14:00</source>
+        <target>Hours and minutes, for example 14:00</target>
+      </trans-unit>
+      <trans-unit id="723c8ce6450c233a3e54cb0ac624238d">
+        <source>Delivery days</source>
+        <target>Delivery days</target>
+      </trans-unit>
+      <trans-unit id="bf50d5e661106d0abe925af3c2e6f7e7">
+        <source>Header</source>
+        <target>Header</target>
+      </trans-unit>
+      <trans-unit id="624fd7132054ed78ba09fb5ea553e77b">
+        <source>The strip above the header, the low header after scrolling and the category panel.</source>
+        <target>The strip above the header, the low header after scrolling and the category panel.</target>
+      </trans-unit>
+      <trans-unit id="85f5939f6ae3eed1d6f48fbebe2fc2f6">
+        <source>Strip above the header</source>
+        <target>Strip above the header</target>
+      </trans-unit>
+      <trans-unit id="87c299e2352ea69bc79f17b7f8b36fcf">
+        <source>Strip text for visitors</source>
+        <target>Strip text for visitors</target>
+      </trans-unit>
+      <trans-unit id="20713d959a3f483d5423e3b4ad876de8">
+        <source>{cutoff} shows the order cut-off from the Delivery section. Empty: the standard text. Logged-in customers see the delivery day instead.</source>
+        <target>{cutoff} shows the order cut-off from the Delivery section. Empty: the standard text. Logged-in customers see the delivery day instead.</target>
+      </trans-unit>
+      <trans-unit id="3f715f6730841919637e75d5fcbe2dc1">
+        <source>Strip text in the consumer view</source>
+        <target>Strip text in the consumer view</target>
+      </trans-unit>
+      <trans-unit id="f824c188417ed2c1edbfcae56702b9fe">
+        <source>{cutoff} shows the order cut-off. Empty: the standard text without net prices.</source>
+        <target>{cutoff} shows the order cut-off. Empty: the standard text without net prices.</target>
+      </trans-unit>
+      <trans-unit id="21ffa39e1d69188bc8d2f811563f6899">
+        <source>Low header after scrolling</source>
+        <target>Low header after scrolling</target>
+      </trans-unit>
+      <trans-unit id="66c4dc67b811150d1304df841a40a9dc">
+        <source>On phones. On computers the header stays the same after scrolling.</source>
+        <target>On phones. On computers the header stays the same after scrolling.</target>
+      </trans-unit>
+      <trans-unit id="5b9d80095ce9acd05bd080c010275e94">
+        <source>Dim the page under the category panel</source>
+        <target>Dim the page under the category panel</target>
+      </trans-unit>
+      <trans-unit id="bc130ea57a10a4d9b482e94dddf2a455">
+        <source>Recommended product in the category panel</source>
+        <target>Recommended product in the category panel</target>
+      </trans-unit>
+      <trans-unit id="9c725bfd2a10788a7e94577645526f40">
+        <source>Subcategory tiles on the category page</source>
+        <target>Subcategory tiles on the category page</target>
+      </trans-unit>
+      <trans-unit id="bfd4b352d102f5954f222c43d11c17cf">
+        <source>The subcategories with the most products. The others are in the category tree. 0: no tiles.</source>
+        <target>The subcategories with the most products. The others are in the category tree. 0: no tiles.</target>
+      </trans-unit>
+      <trans-unit id="543837eebff71a51d9e1bc639847c895">
+        <source>Product feature with the pack size</source>
+        <target>Product feature with the pack size</target>
+      </trans-unit>
+      <trans-unit id="c1eedabd3010f23b50c6998661378149">
+        <source>Shown next to the reference in the mini cart.</source>
+        <target>Shown next to the reference in the mini cart.</target>
+      </trans-unit>
+      <trans-unit id="bf95444ad1b6445745ab87e77c471931">
+        <source>Logo sign for phones and the low header</source>
+        <target>Logo sign for phones and the low header</target>
+      </trans-unit>
+      <trans-unit id="d14b84fce06f671477fd3ce2c3266cbb">
+        <source>PNG, WebP or JPG, about 80 × 68 px. Without it the normal logo is shown.</source>
+        <target>PNG, WebP or JPG, about 80 × 68 px. Without it the normal logo is shown.</target>
+      </trans-unit>
+      <trans-unit id="d6878885ede88563cfa675b641d5c066">
+        <source>Remove the logo sign</source>
+        <target>Remove the logo sign</target>
+      </trans-unit>
+      <trans-unit id="1f897556bf01dbee6b158548dfcbd931">
+        <source>Home page: Featured</source>
+        <target>Home page: Featured</target>
+      </trans-unit>
+      <trans-unit id="8e425d49eba926728c6cc1aa18eb8f16">
+        <source>The text tile that opens the Featured row. Leave the title and the description empty to hide it.</source>
+        <target>The text tile that opens the Featured row. Leave the title and the description empty to hide it.</target>
+      </trans-unit>
+      <trans-unit id="0664b0f28f80eb28e3b5a79795eb877f">
+        <source>Label above the title</source>
+        <target>Label above the title</target>
+      </trans-unit>
+      <trans-unit id="3b1318ff585904ba7f27d911cde01da4">
+        <source>For example the month: December.</source>
+        <target>For example the month: December.</target>
+      </trans-unit>
+      <trans-unit id="b5a7adde1af5c87d7fd797b6245c2a39">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="03da59229e6a17aa88b1150dc5883ebc">
+        <source>One or two sentences: why these products now.</source>
+        <target>One or two sentences: why these products now.</target>
+      </trans-unit>
+      <trans-unit id="63a11faa3a692d4e00fa8e03bbe8a0d6">
+        <source>Link text</source>
+        <target>Link text</target>
+      </trans-unit>
+      <trans-unit id="fc9ba5205c409f9d8ab654cf1985bb4c">
+        <source>Empty: no link.</source>
+        <target>Empty: no link.</target>
+      </trans-unit>
+      <trans-unit id="f6968f35dcea5a6f0f57de785fe0e734">
+        <source>Link address</source>
+        <target>Link address</target>
+      </trans-unit>
+      <trans-unit id="76a7603ac47c3a0033c4fb6d5d4876f5">
+        <source>Empty: the same page as "View all" of the section.</source>
+        <target>Empty: the same page as "View all" of the section.</target>
+      </trans-unit>
+      <trans-unit id="a85eba4c6c699122b2bb1387ea4813ad">
+        <source>Cart</source>
+        <target>Cart</target>
+      </trans-unit>
+      <trans-unit id="e875eabc0d92a82a6c60f3b5fff33710">
+        <source>What the customer sees right after adding a product to the cart, on the product page and on every product card.</source>
+        <target>What the customer sees right after adding a product to the cart, on the product page and on every product card.</target>
+      </trans-unit>
+      <trans-unit id="116d8edf5b9c5ad2722ed9e9700ba8d9">
+        <source>After adding to the cart</source>
+        <target>After adding to the cart</target>
+      </trans-unit>
+      <trans-unit id="25202ab1d1ea672e1a4493e28534a3f1">
+        <source>Open the mini cart</source>
+        <target>Open the mini cart</target>
+      </trans-unit>
+      <trans-unit id="f4d238ba709ec6c0f93cd7bf1fc8d2d2">
+        <source>Window with a summary</source>
+        <target>Window with a summary</target>
+      </trans-unit>
+      <trans-unit id="c201dbc938420261a49c59ba2c3ef4b8">
+        <source>The mini cart opens at the cart icon (on phones from the bottom) and closes by itself after a few seconds.</source>
+        <target>The mini cart opens at the cart icon (on phones from the bottom) and closes by itself after a few seconds.</target>
+      </trans-unit>
+      <trans-unit id="eb763a2e313718f33f55e1f0d84df6ee">
+        <source>Product page</source>
+        <target>Product page</target>
+      </trans-unit>
+      <trans-unit id="194c825b932d87072ef29ac5dbff58d2">
+        <source>Product features shown at the top of the product page: the origin under the name, the sale unit after the price and up to three facts with an icon. A feature shown here is left out of the Specifications.</source>
+        <target>Product features shown at the top of the product page: the origin under the name, the sale unit after the price and up to three facts with an icon. A feature shown here is left out of the Specifications.</target>
+      </trans-unit>
+      <trans-unit id="91ee809c9c92289903420c098c9008f1">
+        <source>Feature with the origin</source>
+        <target>Feature with the origin</target>
+      </trans-unit>
+      <trans-unit id="1dbe3833ba7e28555b033514ac88840b">
+        <source>Shown with a pin next to the reference, under the product name.</source>
+        <target>Shown with a pin next to the reference, under the product name.</target>
+      </trans-unit>
+      <trans-unit id="6f148eb807055695208fbb9bcc7c68ac">
+        <source>Feature with the sale unit</source>
+        <target>Feature with the sale unit</target>
+      </trans-unit>
+      <trans-unit id="62a11f9ddd72bdfc25fcbd2c2feff55e">
+        <source>Shown after the price, for example / kg. With kg and a product weight the page also gives the price of one pack.</source>
+        <target>Shown after the price, for example / kg. With kg and a product weight the page also gives the price of one pack.</target>
+      </trans-unit>
+      <trans-unit id="776718addeede6cc77c9473f27e29090">
+        <source>Text for visitors instead of the price</source>
+        <target>Text for visitors instead of the price</target>
+      </trans-unit>
+      <trans-unit id="b7876455fe5348e35e5365de8dc979a4">
+        <source>Under "Net prices after logging in", above the login buttons. Empty: the standard text.</source>
+        <target>Under "Net prices after logging in", above the login buttons. Empty: the standard text.</target>
+      </trans-unit>
+      <trans-unit id="8794c0463bb4791e6366e7a4664a8c5c">
+        <source>Fact 1: feature</source>
+        <target>Fact 1: feature</target>
+      </trans-unit>
+      <trans-unit id="936f1358176be1a4c33dd586a11be4c2">
+        <source>Fact 1: icon</source>
+        <target>Fact 1: icon</target>
+      </trans-unit>
+      <trans-unit id="6bb9282d7939ab404c2b0ff9a6a22271">
+        <source>Fact 2: feature</source>
+        <target>Fact 2: feature</target>
+      </trans-unit>
+      <trans-unit id="41682b4a0b92202e704f62caf569a634">
+        <source>Fact 2: icon</source>
+        <target>Fact 2: icon</target>
+      </trans-unit>
+      <trans-unit id="d1379cac5b0cde8df6ddc561bbf9a5bc">
+        <source>Fact 3: feature</source>
+        <target>Fact 3: feature</target>
+      </trans-unit>
+      <trans-unit id="67846bc987a1b6abc227fef513810357">
+        <source>Fact 3: icon</source>
+        <target>Fact 3: icon</target>
+      </trans-unit>
+      <trans-unit id="cd45d3d92bf87c37836070646c21549e">
+        <source>Product page: content cards</source>
+        <target>Product page: content cards</target>
+      </trans-unit>
+      <trans-unit id="a72d8ba416efd7f818d9086b06d4cc45">
+        <source>Product features shown in the cards under the gallery: Composition and allergens, and the Nutrition table. Every other feature that the top of the page does not show goes to the Logistics card. A card without data for a product is not shown.</source>
+        <target>Product features shown in the cards under the gallery: Composition and allergens, and the Nutrition table. Every other feature that the top of the page does not show goes to the Logistics card. A card without data for a product is not shown.</target>
+      </trans-unit>
+      <trans-unit id="f7f678081ea7552709f5207838380726">
+        <source>Feature with the ingredients</source>
+        <target>Feature with the ingredients</target>
+      </trans-unit>
+      <trans-unit id="fe416b919d9ede2e57819701ed0aa5a7">
+        <source>Feature with the allergens</source>
+        <target>Feature with the allergens</target>
+      </trans-unit>
+      <trans-unit id="99b5bf5d5f3494f0f7ad7614fea217e9">
+        <source>Allergens separated with commas; each one is highlighted as a label.</source>
+        <target>Allergens separated with commas; each one is highlighted as a label.</target>
+      </trans-unit>
+      <trans-unit id="6a033005195bdb2e51e32dd72e700fdc">
+        <source>Feature with "Free from"</source>
+        <target>Feature with "Free from"</target>
+      </trans-unit>
+      <trans-unit id="fadab074a107c18335023a902c28849c">
+        <source>Feature with the nutrition basis</source>
+        <target>Feature with the nutrition basis</target>
+      </trans-unit>
+      <trans-unit id="f4a2f043405bcae1183a4bdb8b30fb8f">
+        <source>For example 100 g: the table reads "Nutrition per 100 g".</source>
+        <target>For example 100 g: the table reads "Nutrition per 100 g".</target>
+      </trans-unit>
+      <trans-unit id="c253336a7c2e49707bbd59930820a46d">
+        <source>Rows of the nutrition table</source>
+        <target>Rows of the nutrition table</target>
+      </trans-unit>
+      <trans-unit id="96f9047b3ad9e8f2bf141ebc55ea16b3">
+        <source>In the order of the features (Catalog › Attributes &amp; Features › Features).</source>
+        <target>In the order of the features (Catalog › Attributes &amp; Features › Features).</target>
+      </trans-unit>
+      <trans-unit id="ca6f4d3eb8dbeed731c98c1cbdda31d7">
+        <source>Indented rows ("of which")</source>
+        <target>Indented rows ("of which")</target>
+      </trans-unit>
+      <trans-unit id="706fededbd029587486e781609166e61">
+        <source>Payment and delivery methods</source>
+        <target>Payment and delivery methods</target>
+      </trans-unit>
+      <trans-unit id="7c1b089104a726a4161dcbc89ce48001">
+        <source>The icon next to every carrier and payment method in the checkout and on the order confirmation, and the name and the line under it of every payment method in the checkout. Without a choice the icon follows the carrier name or the payment module.</source>
+        <target>The icon next to every carrier and payment method in the checkout and on the order confirmation, and the name and the line under it of every payment method in the checkout. Without a choice the icon follows the carrier name or the payment module.</target>
+      </trans-unit>
+      <trans-unit id="8bcab46fc9d3d80399f29766931b6e51">
+        <source>Customer account: orders</source>
+        <target>Customer account: orders</target>
+      </trans-unit>
+      <trans-unit id="14859e150174ec002e4290e506690eb3">
+        <source>The "To pay" and "In progress" filters of the order list in the customer account. Without a choice the statuses follow their settings in Orders › Statuses.</source>
+        <target>The "To pay" and "In progress" filters of the order list in the customer account. Without a choice the statuses follow their settings in Orders › Statuses.</target>
+      </trans-unit>
+      <trans-unit id="d98bb3e4508a21447dc90491e69fbb43">
+        <source>Statuses "To pay"</source>
+        <target>Statuses "To pay"</target>
+      </trans-unit>
+      <trans-unit id="9b9658b8fdc2a3d346c4a5407cb6337a">
+        <source>Orders the customer still has to pay for. An order waiting for a bank transfer also gets the "Transfer details" link.</source>
+        <target>Orders the customer still has to pay for. An order waiting for a bank transfer also gets the "Transfer details" link.</target>
+      </trans-unit>
+      <trans-unit id="b9e4388414c1d49953558711ce018e43">
+        <source>Statuses "In progress"</source>
+        <target>Statuses "In progress"</target>
+      </trans-unit>
+      <trans-unit id="d6baaaa90828e512bb5c4388183cfc04">
+        <source>Orders accepted and not yet delivered. Delivered, cancelled and refunded orders show only under "All".</source>
+        <target>Orders accepted and not yet delivered. Delivered, cancelled and refunded orders show only under "All".</target>
+      </trans-unit>
+      <trans-unit id="618d0f6eda0c8212a42ac3047ea79bb0">
+        <source>Orders per page</source>
+        <target>Orders per page</target>
+      </trans-unit>
+      <trans-unit id="2c595b4f6d0c5d25b9c326fcb9738e33">
+        <source>Product images</source>
+        <target>Product images</target>
+      </trans-unit>
+      <trans-unit id="84cef34205920f545158c9bdff95ced1">
+        <source>Applied to every product photo after it is uploaded or its thumbnails are regenerated.</source>
+        <target>Applied to every product photo after it is uploaded or its thumbnails are regenerated.</target>
+      </trans-unit>
+      <trans-unit id="33ec38ae8ce5ba3f196ef22428e0caa9">
+        <source>Largest file, in KB</source>
+        <target>Largest file, in KB</target>
+      </trans-unit>
+      <trans-unit id="519260f08677a808c895edb690fa6c64">
+        <source>The original and every thumbnail are compressed until they fit. 0: no limit.</source>
+        <target>The original and every thumbnail are compressed until they fit. 0: no limit.</target>
+      </trans-unit>
+      <trans-unit id="e81cdc46d66ecf55dcb59bc141132f77">
+        <source>Longest side of the original, in pixels</source>
+        <target>Longest side of the original, in pixels</target>
+      </trans-unit>
+      <trans-unit id="0f1b4e5c7dc9a12ce3ca6a2e264f5950">
+        <source>Larger photos are scaled down after the thumbnails are made. Keep it at least the size of the largest image type.</source>
+        <target>Larger photos are scaled down after the thumbnails are made. Keep it at least the size of the largest image type.</target>
+      </trans-unit>
+      <trans-unit id="4096fb3700b2294bb67d6464f2e349b4">
+        <source>Browser tab</source>
+        <target>Browser tab</target>
+      </trans-unit>
+      <trans-unit id="0331eb1c46cfbe513be1aeeb1aea097b">
+        <source>The title the browser tab shows while a customer is on another tab.</source>
+        <target>The title the browser tab shows while a customer is on another tab.</target>
+      </trans-unit>
+      <trans-unit id="588580e2f838a061b686359ed9438bb6">
+        <source>Title on another tab</source>
+        <target>Title on another tab</target>
+      </trans-unit>
+      <trans-unit id="316185075abef1101226647173e8a0bf">
+        <source>Leave empty to keep the page title</source>
+        <target>Leave empty to keep the page title</target>
+      </trans-unit>
+      <trans-unit id="6adf97f83acf6453d4a6a4b1070f3754">
+        <source>None</source>
+        <target>None</target>
+      </trans-unit>
+      <trans-unit id="5edc2f7639916cf1db25527b7def1f44">
+        <source>Carrier: %name%</source>
+        <target>Carrier: %name%</target>
+      </trans-unit>
+      <trans-unit id="e7f3c0c661dd27febba7da13eea20ba5">
+        <source>Payment: %name%</source>
+        <target>Payment: %name%</target>
+      </trans-unit>
+      <trans-unit id="50e127fa97aa0c32842c3cc5d25d9d81">
+        <source>Name in the checkout: %name%</source>
+        <target>Name in the checkout: %name%</target>
+      </trans-unit>
+      <trans-unit id="a6be5e631b18fb1487b5e2508173cf2c">
+        <source>Leave empty to show the name of the payment module.</source>
+        <target>Leave empty to show the name of the payment module.</target>
+      </trans-unit>
+      <trans-unit id="a352c4f7da4940594ca6d077615f3350">
+        <source>Line under the name: %name%</source>
+        <target>Line under the name: %name%</target>
+      </trans-unit>
+      <trans-unit id="7a6a5f1203f505270ae9a91b25ffc4f4">
+        <source>For example: bank details in the order confirmation</source>
+        <target>For example: bank details in the order confirmation</target>
+      </trans-unit>
+      <trans-unit id="719c8e441759ff3aa2ff78d0a2751f15">
+        <source>The feature named "Opakowanie" or "Packaging"</source>
+        <target>The feature named "Opakowanie" or "Packaging"</target>
+      </trans-unit>
+      <trans-unit id="5e71a8f17341dac06da15ad46a988123">
+        <source>No link</source>
+        <target>No link</target>
       </trans-unit>
       <trans-unit id="715cda50ac7729356c1f5238e2ef755d">
         <source>Values of the active theme. An empty field keeps the theme value shown in grey.</source>

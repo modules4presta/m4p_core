@@ -71,6 +71,12 @@ class AdminM4pCoreSettingsController extends ModuleAdminController
         }
 
         $result = M4pCoreSettings::saveSection($section, $input);
+        foreach ($section['fields'] as $field) {
+            $store = M4pCoreLogoMark::STORES[$field['store'] ?? ''] ?? null;
+            if ($store !== null && !M4pCoreLogoMark::save($_FILES[$field['key']] ?? null, (bool) Tools::getValue($store[1]), $store[0])) {
+                $result['refused'][] = $field['key'];
+            }
+        }
         $this->refused = $result['refused'];
         $changed = $this->alsoChanged($section, $result);
 
@@ -119,7 +125,7 @@ class AdminM4pCoreSettingsController extends ModuleAdminController
         foreach ($section['fields'] as $field) {
             $key = (string) $field['key'];
 
-            if (in_array($field['type'] ?? 'text', ['switch', 'file'], true) || in_array($key, $result['refused'], true)) {
+            if (in_array($field['type'] ?? 'text', ['switch', 'file', 'days', 'week'], true) || in_array($key, $result['refused'], true)) {
                 continue;
             }
 
@@ -205,7 +211,20 @@ class AdminM4pCoreSettingsController extends ModuleAdminController
 
         // A refused field shows the value that was sent, so it does not have to be typed again.
         foreach ($this->refused as $key) {
-            $values[$key] = (string) Tools::getValue($key);
+            $sent = Tools::getValue($key);
+            $values[$key] = is_array($sent) ? implode(',', $sent) : (string) $sent;
+        }
+
+        $ticked = [];
+        $week = [];
+        foreach ($section['fields'] as $field) {
+            if ($field['type'] === 'days') {
+                $ticked[$field['key']] = explode(',', (string) $values[$field['key']]);
+            }
+            if ($field['type'] === 'week') {
+                $sent = in_array($field['key'], $this->refused, true) ? Tools::getValue($field['key']) : null;
+                $week[$field['key']] = is_array($sent) ? $sent : M4pCoreSales::toInput((string) $values[$field['key']]);
+            }
         }
 
         $swatches = [];
@@ -223,6 +242,17 @@ class AdminM4pCoreSettingsController extends ModuleAdminController
 
         $this->context->smarty->assign([
             'm4p_swatches' => $swatches,
+            'm4p_ticked' => $ticked,
+            'm4p_week' => $week,
+            'm4p_day_names' => [
+                1 => $this->trans('Monday', [], 'Modules.M4pcore.Admin'),
+                2 => $this->trans('Tuesday', [], 'Modules.M4pcore.Admin'),
+                3 => $this->trans('Wednesday', [], 'Modules.M4pcore.Admin'),
+                4 => $this->trans('Thursday', [], 'Modules.M4pcore.Admin'),
+                5 => $this->trans('Friday', [], 'Modules.M4pcore.Admin'),
+                6 => $this->trans('Saturday', [], 'Modules.M4pcore.Admin'),
+                7 => $this->trans('Sunday', [], 'Modules.M4pcore.Admin'),
+            ],
             'm4p_sections' => $sections,
             'm4p_current' => $id,
             'm4p_section' => $section,

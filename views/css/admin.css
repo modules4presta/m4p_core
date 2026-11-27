@@ -36,6 +36,7 @@
 .m4p-core-settings__nav a { display: block; padding: 10px 14px; color: #363a41; }
 .m4p-core-settings__nav li.is-current a { font-weight: 600; box-shadow: inset 3px 0 0 #25b9d7; }
 .m4p-core-check { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; }
+.m4p-core-check + .m4p-core-check { margin-left: 16px; }
 .m4p-core-settings__form .help-block code { font-size: 11px; }
 
 @media (max-width: 900px) {
@@ -44,3 +45,6 @@
 
 .m4p-core-color { display: flex; gap: 8px; align-items: center; max-width: 360px; }
 .m4p-core-color__picker { flex: none; width: 40px; height: 32px; padding: 0; border: 1px solid #bbcdd2; border-radius: 3px; background: none; cursor: pointer; }
+.m4p-core-week { display: grid; gap: 6px; }
+.m4p-core-settings__form .m4p-core-week__day { display: flex; align-items: center; gap: 12px; margin: 0; font-weight: 400; }
+.m4p-core-settings__form .m4p-core-week__day span { width: 110px; }
