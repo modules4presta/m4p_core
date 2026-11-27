@@ -66,7 +66,7 @@ class M4p_Core extends Module
     {
         $this->name = 'm4p_core';
         $this->tab = 'administration';
-        $this->version = '1.25.0';
+        $this->version = '1.26.0';
         $this->author = 'Modules4Presta';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '1.7.6.0', 'max' => _PS_VERSION_];

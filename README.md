@@ -76,7 +76,7 @@ them back if a restored database is missing them.
 | Product page: content cards | features with the ingredients, the allergens, "Free from", the nutrition basis and the nutrition table rows (with the indented ones); every other feature not shown at the top goes to Logistics |
 | Payment and delivery methods | the icon of every carrier and payment method in the checkout and on the order confirmation (automatic choice from the name or the module), and the name and the line under it of every payment method in the checkout |
 | Customer account: orders | the statuses of the "To pay" and "In progress" filters, orders per page |
-| Product images | largest file in KB (default 200), longest side of the original (default 1440 px) – applied after every upload and thumbnail regeneration; 0 KB turns the limit off |
+| Product images | largest file in KB (default 0: off), longest side of the original (default 1440 px) – applied after every upload and thumbnail regeneration; 0 KB turns the limit off |
 | Browser tab | title shown while the customer is on another tab |
 | Theme: colors, typography, layout and spacing, shape and effects | the CSS custom properties of the active theme, read from its tokens file |
 
@@ -228,7 +228,7 @@ Every field is optional; an empty one leaves the reading module with its own val
 | **Company data** | Legal name, address, tax and register numbers, phone, e-mail and opening hours as they should appear in documents, the footer and contact blocks, and the privacy policy page linked in the checkout. |
 | **Sales department** | Phone, hours per weekday and e-mail; empty fields fall back to m4p_contactwidget and the shop contact details. |
 | **Delivery** | Order cut-off (14:00) and delivery days (Monday to Friday) shown in the header strip, the mini cart and on the home page. |
-| **Product images** | 200 KB and 1440 px suit most catalogues; keep the longest side at least the size of the largest image type, or set 0 KB to leave the files as uploaded. |
+| **Product images** | Off on a new install. 200 KB and 1440 px suit most catalogues; keep the longest side at least the size of the largest image type, or set 0 KB to leave the files as uploaded. |
 | **Measurement** | Google Tag Manager container, the switch for reporting events (on by default) and `utm_source` for outbound links. |
 | **Addresses** | Links to the module shop and the support page. |
 | **Newsletter** | The CMS page with the sending and unsubscribing rules (linked under the consent), the title, the text and the photo next to the form; empty fields give the theme's standard text. |
