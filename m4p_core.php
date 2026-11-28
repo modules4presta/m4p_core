@@ -66,7 +66,7 @@ class M4p_Core extends Module
     {
         $this->name = 'm4p_core';
         $this->tab = 'administration';
-        $this->version = '1.26.0';
+        $this->version = '1.26.1';
         $this->author = 'Modules4Presta';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '1.7.6.0', 'max' => _PS_VERSION_];
@@ -263,7 +263,10 @@ class M4p_Core extends Module
         if ($tabBlurTitle !== '') {
             Media::addJsDef(['m4pTabBlurTitle' => $tabBlurTitle]);
         }
-        $this->context->smarty->assign('m4p_logo_mark', M4pCoreLogoMark::url());
+        $this->context->smarty->assign([
+            'm4p_logo_mark' => M4pCoreLogoMark::url(),
+            'm4p_logo_mark_size' => M4pCoreLogoMark::size(M4pCoreLogoMark::KEY),
+        ]);
 
         return M4pCoreTheme::head() . M4pCoreMotion::head();
     }

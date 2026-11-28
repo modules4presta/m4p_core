@@ -4,6 +4,13 @@ All notable changes to this module are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the module uses
 [semantic versioning](https://semver.org/).
 
+## [1.26.1] - 2026-11-27
+
+### Added
+
+- The storefront gets the width and height of the logo mark as `$m4p_logo_mark_size`, so a theme can give the image
+  its real proportions.
+
 ## [1.26.0] - 2026-11-27
 
 ### Changed
